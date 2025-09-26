@@ -1,0 +1,30 @@
+{
+    "name": "LaTeX Environment",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/texlive:1": {
+            "version": "2023"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "james-yu.latex-workshop",
+                "formulahendry.auto-close-tag",
+                "ms-vscode.live-server"
+            ],
+            "settings": {
+                "editor.fontSize": 12,
+                "editor.fontFamily": "'Source Code Pro', 'Lucida Console', monospace",
+                "editor.lineHeight": 18,
+                "editor.autoClosingBrackets": "always",
+                "editor.autoClosingQuotes": "always",
+                "editor.autoIndent": "full",
+                "latex-workshop.latex.recipe.default": "xelatex",
+                "latex-workshop.view.pdf.viewer": "tab",
+                "latex-workshop.latex.autoBuild.run": "onFileChange"
+            }
+        }
+    },
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y fonts-lmodern cm-super"
+}
