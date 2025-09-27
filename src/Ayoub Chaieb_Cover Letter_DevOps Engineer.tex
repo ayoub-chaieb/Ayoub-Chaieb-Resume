@@ -1,0 +1,35 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parskip}{0.8em}
+\setlength{\parindent}{0pt}
+\input{personal.tex}
+\input{custom_fields.tex} % <-- This pulls in your job-specific values
+
+\begin{document}
+
+\begin{flushright}
+    {\textbf{\FullName}} - \JobTitle \\
+    \Phone \\
+    \href{mailto:\Email}{\Email} \\
+    \Location \\
+    \LinkedIn \\
+    \GitHub
+\end{flushright}
+\vspace{1em}
+\today
+\vspace{2em}
+
+
+Dear \HiringManager,
+
+I am writing to apply for the \JobTitle position at \CompanyName. With proven experience in cloud engineering and DevOps, I specialize in automating infrastructure, building CI/CD pipelines, and managing scalable deployments on AWS and Linux.
+
+At BOUGABRINE Enterprise, I managed Windows Server environments, automated provisioning with PowerShell, and cut manual work by 60\%. I also containerized applications with Docker, orchestrated Kubernetes clusters, and integrated monitoring solutions to improve system reliability. Beyond technical delivery, I’ve mentored teams and led workshops, building a culture of collaboration and innovation.
+
+I am particularly drawn to \CompanyName because of \YourMotivation, and I believe my skills in \JobKeywords would enable me to contribute directly to your mission.
+
+I would welcome the opportunity to discuss how I can bring value to your team.
+
+\Signature
+\end{document}
