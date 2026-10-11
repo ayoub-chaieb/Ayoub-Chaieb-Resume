@@ -6,15 +6,17 @@
 \usepackage{xspace}
 \setlength{\parskip}{0.8em}
 \setlength{\parindent}{0pt}
+\hyphenpenalty=10000 \exhyphenpenalty=10000 \emergencystretch=3em
 \input{personal.tex}
 
-% ---- Fill these in per application (the PDF is skipped by CI while FILL IN remains) ----
-\newcommand{\CompanyName}{FILL IN\xspace}
-\newcommand{\HiringManager}{Hiring Manager\xspace}
-\newcommand{\YourMotivation}{FILL IN\xspace}
+% ---- Reusable defaults. Do NOT type company names here. ----
+% The GitHub "Build resume PDFs" run injects CompanyName, HiringManager and YourMotivation for each application.
+\providecommand{\CompanyName}{FILL IN\xspace}
+\providecommand{\HiringManager}{Hiring Manager\xspace}
+\providecommand{\YourMotivation}{FILL IN\xspace}
 \newcommand{\JobTitle}{DevOps Engineer\xspace}
-\newcommand{\JobKeywords}{automating infrastructure, building CI/CD pipelines, containerization with Docker and Kubernetes, and cloud deployments on AWS\xspace}
-% ---------------------------------------------------------------------------------------
+\providecommand{\JobKeywords}{automating infrastructure, building CI/CD pipelines, containerization with Docker and Kubernetes, and cloud deployments on AWS\xspace}
+% -------------------------------------------------------------
 
 \begin{document}
 

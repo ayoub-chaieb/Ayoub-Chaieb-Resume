@@ -1,14 +1,33 @@
 name: Build resume PDFs
 
 on:
+  # Automatic: every push to main builds all resumes
   push:
     branches: [main]
     paths: ["src/**", "scripts/**", ".github/workflows/**"]
   pull_request:
+  # Manual: Actions tab -> "Build resume PDFs" -> "Run workflow" (pick files, fill company for cover letters)
   workflow_dispatch:
+    inputs:
+      files:
+        description: 'Which files? "all", or name parts separated by commas. Example: Cloud, IT Support, Cover Letter_DevOps'
+        default: "all"
+        required: true
+      company:
+        description: "Cover letters only: company name"
+        required: false
+      hiring_manager:
+        description: "Cover letters only: hiring manager (blank = Hiring Manager)"
+        required: false
+      motivation:
+        description: 'Cover letters only: finishes "I am particularly drawn to <company> because of ..."'
+        required: false
+      keywords:
+        description: "Cover letters only (optional): replaces the job-keywords sentence"
+        required: false
 
 permissions:
-  contents: write   # needed to refresh the rolling "latest" release
+  contents: write   # only used to refresh the rolling "latest" release
 
 concurrency:
   group: build-pdfs-${{ github.ref }}
@@ -27,8 +46,14 @@ jobs:
             texlive-xetex texlive-latex-recommended texlive-latex-extra \
             texlive-fonts-recommended fonts-lmodern latexmk poppler-utils
 
-      - name: Compile resumes and run ATS checks
-        run: scripts/build.sh
+      - name: Compile and run ATS checks
+        env:
+          BUILD_FILES: ${{ github.event.inputs.files || 'all' }}
+          COMPANY: ${{ github.event.inputs.company }}
+          HIRING_MANAGER: ${{ github.event.inputs.hiring_manager }}
+          MOTIVATION: ${{ github.event.inputs.motivation }}
+          KEYWORDS: ${{ github.event.inputs.keywords }}
+        run: bash scripts/build.sh
 
       - name: Upload PDFs
         if: always()
@@ -45,8 +70,9 @@ jobs:
           name: build-logs
           path: build/*.log
 
+      # Only automatic pushes refresh "latest" (a manual partial build must not wipe the other PDFs)
       - name: Refresh rolling "latest" release
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
