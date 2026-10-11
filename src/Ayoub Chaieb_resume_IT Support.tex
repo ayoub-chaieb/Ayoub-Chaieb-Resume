@@ -1,101 +1,57 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage[margin=1in]{geometry}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{titlesec}
-\input{personal.tex}
-\input{custom_fields.tex}
-\setlist[itemize]{noitemsep, topsep=0pt}
-\titlespacing*{\section}{0pt}{6pt}{4pt}
+\input{preamble.tex}
 
 \begin{document}
-
-\begin{center}
-    {\LARGE \textbf{\FullName}} \\
-    \JobTitle \\
-    \Phone\enspace\textbar\enspace
-    \href{mailto:\Email}{\Email}\enspace\textbar\enspace
-    \Location\\
-    \LinkedIn\enspace\textbar\enspace\GitHub\\
-\end{center}
+\resumeheader{IT Support Engineer}
 
 \section*{Summary}
-IT Support Engineer with experience in system administration, troubleshooting, and training end users in IT fundamentals. Skilled in Windows Server, Linux, networking, and automation (PowerShell, Bash, Python). Adept at diagnosing incidents, providing Tier 1/2 support, and delivering technical workshops. Currently pursuing a Master’s in Software Engineering.
-
----
-
-\section*{Professional Experience}
-\textbf{ICT and AI Teacher} – Almanhal Schools, Riyadh, Saudi Arabia \hfill Aug 2025 -- Present
-\begin{itemize}
-    \item Delivered ICT and AI curricula to high school students, simplifying technical concepts into clear, actionable lessons.
-    \item Provided technical support for staff and students, resolving hardware/software issues and ensuring smooth classroom technology operations.
-    \item Integrated cloud-based tools into teaching, reinforcing practical knowledge of modern IT systems.
-\end{itemize}
-\textbf{Junior System Administrator} – BOUGABRINE Enterprise, Tunisia \hfill Jun 2024 -- Oct 2024
-\begin{itemize}
-    \item Managed Active Directory, DNS, DHCP, and Group Policy for 50+ users.
-    \item Automated patching and provisioning with PowerShell, saving 60\% manual effort.
-    \item Reduced incidents by 30\% by implementing WSUS and endpoint protection.
-\end{itemize}
-\textbf{IT Teacher} – Albert Camus Middle School, Tunisia \hfill Jan 2025 -- Jul 2025
-\begin{itemize}
-    \item Delivered training on IT fundamentals, algorithms, and mobile development.
-    \item Mentored students through project-based learning and coding workshops.
-\end{itemize}
-\textbf{Telecom Intern} – Tunisie Telecom, Tunisia \hfill Jan 2022 -- Feb 2022
-\begin{itemize}
-    \item Configured routers, switches, and fiber networks for 200+ endpoints.
-    \item Automated logs with Bash scripts, cutting reporting time by 50\%.
-\end{itemize}
-\textbf{Junior Entrepreneurship Coach} – BIAT Foundation, Tunis \hfill 2019 -- 2021
-\begin{itemize}
-    \item Mentored 100+ students in Lean Startup, MVP design, and pitching.
-    \item Organized hackathons and innovation events connecting tech and business.
-\end{itemize}
-\textbf{VR Developer Intern} – Leymax Technologies, Tunisia \hfill Jan 2024 -- Jun 2024
-\begin{itemize}
-    \item Containerized VR applications with Docker and streamlined testing via CI/CD.
-    \item Optimized Unreal Engine builds and multiplayer replication for performance.
-\end{itemize}
-
----
-
-\section*{Education}
-Master’s in Software Engineering – ISET Sousse \hfill 2024 -- 2026 \\
-Bachelor’s in Information Systems – ISET Sousse \hfill 2021 -- 2024 (GPA 3.24)
-
----
-
-\section*{Projects}
-
-\textbf{Historical Weather Forecast Comparison}  
-Automated an ETL pipeline in Shell to scrape, parse, and compare daily forecasts with actuals, reinforcing monitoring, logging, and error handling.  
-\\
-\textbf{Automatic Backup Shell Script}  
-Built a robust, automated backup for sensitive encrypted password files modified in the last 24 hours using Linux Shell scripting and Cron. \\
-\textbf{Code Engine Product Price Comparison App}  
-Supported a serverless product price comparison application on IBM Code Engine, focusing on uptime, incident triage, and API reliability.  
-\\
-\textbf{Emotion Detector with IBM Watson}  
-Developed an AI/ML tool to classify emotions in user feedback, demonstrating troubleshooting, testing, and clear communication with non-technical users.
-
-\section*{Certifications}
-\textbf{Core Cloud \& DevOps}  
-AWS Academy Cloud Architecting | AWS Certified Cloud Practitioner (CLF-C02) | Docker \& Kubernetes | Linux Shell Scripting | DevOps \& Agile Foundations | Agile \& Scrum | Cloud Computing Fundamentals  
----
-
-\textbf{Additional Technical}  
-Snowflake | Python (Intro, Intermediate, pandas, Statistics) | Software Engineering | Understanding ChatGPT  
-
-\textbf{Additional Technical}  
-Snowflake (2025) | Python (Intro, Intermediate, pandas, Statistics) | Understanding ChatGPT (2025) | Software Engineering (2025)
-
----
+IT Support Engineer with Tier 1/2 support, system administration, and end-user training experience. Diagnoses and resolves hardware, software, and network incidents on Windows Server, Linux, and Active Directory environments, and automates repetitive work with PowerShell, Bash, and Python (60\% manual effort saved; 30\% fewer incidents). Explains technical issues clearly to non-technical users and documents solutions for reuse.
 
 \section*{Skills}
-\textbf{Technical Support \& SysAdmin:} Windows Server (AD, DNS, DHCP, WSUS), Linux (RHEL, Ubuntu), End‑user troubleshooting, Ticketing systems (Zendesk, ServiceNow) \\
-\textbf{Cloud Platforms:} AWS (EC2, S3, RDS, IAM, Lambda, CloudFormation), IBM Cloud \\
-\textbf{DevOps \& Automation:} Docker, Kubernetes, Terraform, OpenShift, Git, CI/CD, Jenkins, PowerShell, Bash \\
-\textbf{Programming:} Python, Java, PHP, SQL \\
-\textbf{Languages:} English (Fluent), French (Professional), Arabic (Native)
+\textbf{Technical Support:} Tier 1/2 support, incident troubleshooting, end-user support, ticketing systems (Zendesk, ServiceNow), technical documentation, knowledge base articles\\
+\textbf{Systems and Networking:} Windows Server (Active Directory, Group Policy, DNS, DHCP, WSUS), Linux (RHEL, Ubuntu), switches, routers, endpoint protection\\
+\textbf{Automation:} PowerShell, Bash, Python, Git\\
+\textbf{Cloud:} AWS (EC2, S3, IAM), IBM Cloud, Docker, Kubernetes\\
+\textbf{Soft Skills:} Training and mentoring, clear communication with non-technical users, multicultural teams
+
+\section*{Professional Experience}
+\role{ICT Teacher}{Al Andalus School, Riyadh, Saudi Arabia}{Aug 2026 -- Present}
+\begin{itemize}
+  \item Teach ICT to students and keep classroom technology running for staff and students.
+\end{itemize}
+\role{ICT and AI Teacher}{Almanhal Schools, Riyadh, Saudi Arabia}{Aug 2025 -- May 2026}
+\begin{itemize}
+  \item Resolved hardware and software issues for staff and students, ensuring smooth classroom technology operations.
+  \item Delivered ICT and AI curricula, simplifying technical concepts into clear lessons.
+\end{itemize}
+\role{IT Teacher}{Albert Camus Middle School, Tunisia}{Jan 2025 -- Jul 2025}
+\begin{itemize}
+  \item Delivered training on IT fundamentals, algorithms, and mobile development; mentored students through coding workshops.
+\end{itemize}
+\role{Junior System Administrator}{BOUGABRINE Enterprise, Tunisia}{Jun 2024 -- Oct 2024}
+\begin{itemize}
+  \item Delivered Tier 1/2 support and managed Active Directory, Group Policy, DNS, and DHCP for 50+ users.
+  \item Implemented WSUS and endpoint protection, reducing incidents by 30\%.
+  \item Automated patching and provisioning with PowerShell, saving 60\% of manual effort.
+\end{itemize}
+\role{VR Developer Intern}{Leymax Technologies, Tunisia}{Jan 2024 -- Jun 2024}
+\begin{itemize}
+  \item Containerized VR applications with Docker and streamlined testing through CI/CD.
+\end{itemize}
+\role{Telecom Networks and Infrastructure Intern}{Tunisie Telecom, Tunisia}{Jan 2022 -- Feb 2022}
+\begin{itemize}
+  \item Configured switches, routers, and fiber links for 200+ endpoints; automated log collection with Bash, cutting reporting time by 50\%.
+\end{itemize}
+
+\section*{Projects}
+\project{Automatic Backup Script}{Linux Shell and Cron backup of sensitive encrypted password files modified in the last 24 hours.}
+\project{Historical Weather Forecast Comparison}{Shell ETL pipeline with monitoring, logging, and error handling.}
+
+\section*{Education}
+\textbf{Master's in Software Engineering}, ISET Sousse \hfill 2024 -- 2026 (GPA 3.36/4)\\
+\textbf{Bachelor's in Information Systems}, ISET Sousse \hfill 2021 -- 2024 (GPA 3.24/4)
+
+\section*{Certifications}
+AWS Academy Cloud Architecting, AWS (2025) \textbar\ AWS Academy Cloud Practitioner (CLF-C02), AWS (2025) \textbar\ IBM DevOps and Software Engineering, IBM (2026) \textbar\ Linux Commands and Shell Scripting, IBM/edX (2025) \textbar\ Agile and Scrum Fundamentals, IBM/edX (2025)
+
 \end{document}

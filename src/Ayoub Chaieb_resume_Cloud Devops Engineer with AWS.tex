@@ -1,101 +1,56 @@
-    \documentclass[a4paper,10pt]{article}
-\usepackage[margin=1in]{geometry}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{titlesec}
-\input{personal.tex}
-\input{custom_fields.tex}
-\setlist[itemize]{noitemsep, topsep=0pt}
-\titlespacing*{\section}{0pt}{6pt}{4pt}
+\documentclass[a4paper,10pt]{article}
+\input{preamble.tex}
 
 \begin{document}
-
-\begin{center}
-    {\LARGE \textbf{\FullName}} \\
-    \JobTitle \\
-    \Phone\enspace\textbar\enspace
-    \href{mailto:\Email}{\Email}\enspace\textbar\enspace
-    \Location\\
-    \LinkedIn\enspace\textbar\enspace\GitHub\\
-\end{center}
+\resumeheader{Cloud DevOps Engineer (AWS)}
 
 \section*{Summary}
-AWS and IBM certified DevOps Engineer with hands-on experience building CI/CD pipelines, automating infrastructure, and managing cloud-native deployments. Skilled in Docker, Kubernetes, Terraform, Linux, and scripting (Python, Bash, PowerShell). Unique blend of technical expertise and leadership, having also coached 100+ students in innovation projects. Currently pursuing a Master’s in Software Engineering while expanding expertise in observability and cloud security.
-
-\section*{Professional Experience}
-
-\textbf{ICT Teacher} -- Al Andalus School, Riyadh, Saudi Arabia \hfill Aug 2026 -- Present
-\begin{itemize}
-    \item Delivered structured ICT and TechnoKids curricula, teaching students core data concepts, analytical thinking, algorithms, automation, and introductory AI and programming skills.
-    \item Leveraged digital learning platforms and TechnoCourses tools to organize, present, and communicate information clearly to diverse student groups across multiple technology modules.
-    \item Guided students through technical problem‑solving and project‑based tasks, reinforcing logical reasoning, digital literacy, and hands‑on technology application using TechnoKids resources.
-\end{itemize}
-
-\textbf{ICT and AI Teacher} – Almanhal Schools, Riyadh, Saudi Arabia \hfill Aug 2025 -- May 2026
-\begin{itemize}
-    \item Delivered ICT and AI curricula to high school students, simplifying technical concepts into clear, actionable lessons.
-    \item Provided technical support for staff and students, resolving hardware/software issues and ensuring smooth classroom technology operations.
-    \item Integrated cloud-based tools into teaching, reinforcing practical knowledge of modern IT systems.
-\end{itemize}
-\textbf{Junior System Administrator} – BOUGABRINE Enterprise, Tunisia \hfill Jun 2024 -- Oct 2024
-\begin{itemize}
-    \item Managed Active Directory, DNS, DHCP, and Group Policy for 50+ users.
-    \item Automated patching and provisioning with PowerShell, saving 60\% manual effort.
-    \item Reduced incidents by 30\% by implementing WSUS and endpoint protection.
-\end{itemize}
-\textbf{VR Developer Intern} – Leymax Technologies, Tunisia \hfill Jan 2024 -- Jun 2024
-\begin{itemize}
-    \item Containerized VR applications with Docker and streamlined testing via CI/CD.
-    \item Optimized Unreal Engine builds and multiplayer replication for performance.
-\end{itemize}
-\textbf{Telecom Intern} – Tunisie Telecom, Tunisia \hfill Jan 2022 -- Feb 2022
-\begin{itemize}
-    \item Configured routers, switches, and fiber networks for 200+ endpoints.
-    \item Automated logs with Bash scripts, cutting reporting time by 50\%.
-\end{itemize}
-\textbf{Junior Entrepreneurship Coach} – BIAT Foundation, Tunis \hfill 2019 -- 2021
-\begin{itemize}
-    \item Mentored 100+ students in Lean Startup, MVP design, and pitching.
-    \item Organized hackathons and innovation events connecting tech and business.
-\end{itemize}
-
-\section*{Education}
-Master’s in Software Engineering – ISET Sousse \hfill 2024 -- 2026 \\
-Bachelor’s in Information Systems – ISET Sousse \hfill 2021 -- 2024 (GPA 3.24)
-
-\section*{Projects}
-
-\textbf{Red Hat OpenShift Deployment Project}  
-Configured and deployed containerized applications on OpenShift, managing routes, services, RBAC, and CI/CD integration.  
-\\
-\textbf{Deployment of Health App on Kubernetes}  
-Containerized and deployed a health application with Docker and Kubernetes, implementing pipelines for continuous delivery.  
-\\
-\textbf{Code Engine Product Price Comparison App}  
-Implemented serverless deployment on IBM Code Engine with auto-scaling and RESTful APIs, optimizing build and release workflows.  
-\\
-\textbf{TDD \& BDD Practice Code}  
-Applied TDD/BDD across projects to enforce quality gates, accelerate feedback loops, and improve deployment reliability.
-
-\section*{Certifications}
-\textbf{Core Cloud \& DevOps}  
-IBM DevOps and Software Engineering (2026) | AWS Academy Cloud Architecting (2025) | AWS Practitioner CLF-C02 (2025  
+AWS- and IBM-certified Cloud DevOps Engineer who builds CI/CD pipelines, containerized deployments (Docker, Kubernetes, OpenShift), and infrastructure automation (Terraform, Python, Bash, PowerShell) on AWS and IBM Cloud. Automated provisioning and patching that saved 60\% of manual effort and cut incidents by 30\%. Master's in Software Engineering; mentor and trainer who explains complex systems clearly.
 
 \section*{Skills}
-\textbf{Cloud:} AWS (EC2, S3, RDS, IAM, Lambda, CloudFormation), IBM Cloud \\
+\textbf{Cloud:} AWS (EC2, S3, RDS, IAM, Lambda, CloudFormation), IBM Cloud, IBM Code Engine\\
+\textbf{DevOps and CI/CD:} Docker, Kubernetes, Red Hat OpenShift, Podman, Terraform, Jenkins, GitHub Actions, Git, DevSecOps, Continuous Integration, Continuous Delivery\\
+\textbf{Programming and Scripting:} Python, Bash, PowerShell, Java, SQL, REST APIs, Postman\\
+\textbf{Monitoring and Observability:} Prometheus, Grafana, OpenTelemetry, IBM Instana, Kibana, Mezmo (LogDNA)\\
+\textbf{Security and Quality:} Snyk, vulnerability assessment, web application security, Test-Driven Development (TDD), Agile\\
+\textbf{Systems:} Linux (RHEL, Ubuntu), Windows Server (Active Directory, DNS, DHCP, WSUS)
 
-\textbf{DevOps:} Docker, Kubernetes, OpenShift, Terraform (HashiCorp Terraform), Git, CI/CD, Jenkins, DevOps, DevSecOps, Continuous Integration, Continuous Development, Podman \\
+\section*{Professional Experience}
+\role{ICT Teacher}{Al Andalus School, Riyadh, Saudi Arabia}{Aug 2026 -- Present}
+\begin{itemize}
+  \item Teach ICT and introductory AI, programming, algorithms, and automation to students, turning technical concepts into clear, hands-on projects.
+\end{itemize}
+\role{ICT and AI Teacher}{Almanhal Schools, Riyadh, Saudi Arabia}{Aug 2025 -- May 2026}
+\begin{itemize}
+  \item Delivered ICT and AI curricula, integrated cloud-based tools into lessons, and resolved hardware and software issues for staff and students.
+\end{itemize}
+\role{Junior System Administrator}{BOUGABRINE Enterprise, Tunisia}{Jun 2024 -- Oct 2024}
+\begin{itemize}
+  \item Automated patching and provisioning with PowerShell, saving 60\% of manual effort.
+  \item Implemented WSUS and endpoint protection, reducing incidents by 30\%.
+  \item Managed Active Directory, DNS, DHCP, and Group Policy for a 50+ user network.
+\end{itemize}
+\role{VR Developer Intern}{Leymax Technologies, Tunisia}{Jan 2024 -- Jun 2024}
+\begin{itemize}
+  \item Containerized VR applications with Docker and streamlined testing through CI/CD pipelines.
+  \item Optimized Unreal Engine 5 builds and implemented multiplayer replication infrastructure on AWS.
+\end{itemize}
+\role{Telecom Networks and Infrastructure Intern}{Tunisie Telecom, Tunisia}{Jan 2022 -- Feb 2022}
+\begin{itemize}
+  \item Configured switches, routers, and fiber links for 200+ endpoints; automated log collection with Bash, cutting reporting time by 50\%.
+\end{itemize}
 
-\textbf{Programming:} Python, Bash, PowerShell, Java, PHP, SQL, RESTful Services, GraphQL, Postman \\
+\section*{Projects}
+\project{Customer Accounts Microservice (CI/CD)}{Built a tested RESTful Flask service with TDD, Flask-Talisman and CORS security, and a GitHub Actions pipeline enforcing linting, unit tests, and coverage.}
+\project{Red Hat OpenShift Deployment}{Deployed containerized applications on OpenShift, managing routes, services, RBAC, and CI/CD integration.}
+\project{Health App on Kubernetes}{Containerized a health application with Docker and deployed it on Kubernetes with continuous delivery pipelines.}
+\project{Price Comparison App on IBM Code Engine}{Deployed a serverless application with auto-scaling and REST APIs.}
 
-\textbf{Security:} Vulnerability Assessment, Web App Security, Risk Prevention, Static Testing, Software Testing, Snyk, Security Best Practices \\
+\section*{Education}
+\textbf{Master's in Software Engineering}, ISET Sousse \hfill 2024 -- 2026 (GPA 3.36/4)\\
+\textbf{Bachelor's in Information Systems}, ISET Sousse \hfill 2021 -- 2024 (GPA 3.24/4)
 
-\textbf{Monitoring \& Observability:} OpenTelemetry, Prometheus, Grafana, IBM Instana, Mezmo, LogDNA, Kibana, System Monitoring, Observability, Data Logging, Code Coverage \\
-
-\textbf{SysAdmin:} Windows Server (AD, DNS, DHCP, WSUS), Linux (RHEL, Ubuntu) \\
-
-\textbf{Methodologies:} Agile, Test-Driven Development (TDD) \\
-
-\textbf{Languages:} English (Fluent), French (Professional), Arabic (Native)
+\section*{Certifications}
+IBM DevOps and Software Engineering, IBM (2026) \textbar\ AWS Academy Cloud Architecting, AWS (2025) \textbar\ AWS Academy Cloud Practitioner (CLF-C02), AWS (2025) \textbar\ Containerization with Docker and Kubernetes, DataCamp (2025) \textbar\ DevOps, Cloud, and Agile Foundations, IBM/edX (2025) \textbar\ Linux Commands and Shell Scripting, IBM/edX (2025)
 
 \end{document}

@@ -1,154 +1,106 @@
+% MASTER / SOURCE-OF-TRUTH CV. Long-form (multi-page) on purpose: pull content from here
+% into the one-page targeted resumes. Do NOT submit this file to employers.
 \documentclass[a4paper,10pt]{article}
-\usepackage[margin=1in]{geometry}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{titlesec}
-\input{personal.tex}
-\input{custom_fields.tex}
-% Reduce spacing before/after section titles
-\titlespacing*{\section}{0pt}{2pt}{2pt}
+\input{preamble.tex}
 
 \begin{document}
-
-\begin{center}
-    {\LARGE \textbf{\FullName}} \\
-    \Title \\
-    \Phone\enspace\textbar\enspace
-    \href{mailto:\Email}{\Email}\enspace\textbar\enspace
-    \Location\\
-    \LinkedIn\enspace\textbar\enspace\GitHub\\
-\end{center}
+\resumeheader{Cloud and DevOps Engineer}
 
 \section*{Summary}
-AWS and IBM-certified Cloud \& DevOps Engineer with hands-on experience in maintaining infrastructure, managing hybrid cloud environments, and building CI/CD pipelines. Skilled in Kubernetes, Openshift, Linux, and Python, with a strong background in system administration (Windows/Linux).
-
----
+AWS- and IBM-certified Cloud and DevOps Engineer with hands-on experience maintaining infrastructure, managing hybrid cloud environments, and building CI/CD pipelines. Skilled in Kubernetes, OpenShift, Linux, and Python, with a strong background in Windows and Linux system administration.
 
 \section*{Education}
-\textbf{Higher Institute of Technological Studies of Sousse} \hfill Sep 2024 -- Jul 2026 \\
-Master’s, Software Engineering \hfill GPA: 3.36/4 \\
-\textbf{Higher Institute of Technological Studies of Sousse} \hfill Sep 2021 -- Jul 2024 \\
-Bachelor’s, Information Systems \hfill GPA: 3.24/4
-
----
+\role{Master's in Software Engineering}{ISET Sousse (Higher Institute of Technological Studies of Sousse)}{Sep 2024 -- Jul 2026}
+GPA 3.36/4\par
+\role{Bachelor's in Information Systems}{ISET Sousse}{Sep 2021 -- Jul 2024}
+GPA 3.24/4\par
 
 \section*{Professional Experience}
-
-\textbf{ICT Teacher} – Andalus International Schools, Riyadh, Saudi Arabia \hfill Aug 2026 -- Present
-\begin{itemize}[leftmargin=*]
-    \item Data driven proctoring, setting observability for measured growth related to KPI formulation.
-    \item Maintained corporate size data dashboards to accommodate new metrics using Excel/Power BI.
-    \item Delivered ICT and AI curricula to high school students, simplifying technical concepts into clear, actionable lessons.
-    \item Provided technical support for staff and students, resolving hardware/software issues and ensuring smooth classroom technology operations.
-    \item Integrated cloud-based tools into teaching, reinforcing practical knowledge of modern IT systems.
+% CONFIRM: employer name/dates below differ between files (Al Andalus School vs Andalus International Schools).
+\role{ICT Teacher}{Al Andalus School, Riyadh, Saudi Arabia}{Aug 2026 -- Present}
+\begin{itemize}
+  \item Deliver ICT and AI curricula (TechnoKids), simplifying technical concepts into clear, hands-on lessons.
+  \item Maintained data dashboards for new metrics using Excel and Power BI; set up observability for measured growth tied to KPIs.
+  \item Provided technical support for staff and students and integrated cloud-based tools into teaching.
 \end{itemize}
-\textbf{ICT and AI Teacher} – Almanhal Schools, Riyadh, Saudi Arabia \hfill Aug 2025 -- Aug 2026
-\begin{itemize}[leftmargin=*]
-    \item Integrated cutting edge Datacamp Inc. third-party LMS through convention for best data driven hands-on projects
-    \item Delivered ICT and AI curricula to high school students, simplifying technical concepts into clear, actionable lessons.
+\role{ICT and AI Teacher}{Almanhal Schools, Riyadh, Saudi Arabia}{Aug 2025 -- May 2026}
+\begin{itemize}
+  \item Delivered ICT and AI curricula to primary and high school students.
+  \item Integrated the DataCamp learning platform for data-driven, hands-on projects.
+  \item Supported English instruction and provided technical support to staff and students.
 \end{itemize}
-\textbf{Site Reliability Engineer} -- BOUGABRINE Enterprise, Tunisia \hfill Jun 2024 -- Jun 2025
-\begin{itemize}[leftmargin=*]
-    \item Automated provisioning and patching with Shell and PowerShell, reducing manual work by 60\%.
-    \item Delivered Tier 1/2 support and implemented WSUS with endpoint protection, cutting incidents by 30\%.
-    \item Managed Active Directory, Group Policy, DNS, and DHCP for a 50-user network.
+% CONFIRM: earlier Master file said "Site Reliability Engineer, Jun 2024 -- Jun 2025"; the other files say Junior System Administrator, Jun 2024 -- Oct 2024.
+\role{Junior System Administrator}{BOUGABRINE Enterprise, Tunisia}{Jun 2024 -- Oct 2024}
+\begin{itemize}
+  \item Automated provisioning and patching with Shell and PowerShell, reducing manual work by 60\%.
+  \item Delivered Tier 1/2 support and implemented WSUS with endpoint protection, cutting incidents by 30\%.
+  \item Managed Active Directory, Group Policy, DNS, and DHCP for a 50-user network.
 \end{itemize}
-\textbf{IT Teacher} -- Albert Camus Middle School, Tunisia \hfill Jan 2025 -- Jul 2025
-\begin{itemize}[leftmargin=*]
-    \item Developed and delivered training modules on IT fundamentals, mobile development, and algorithms.
-    \item Mentored students through real-world coding challenges and project-based learning.
-    \item Led workshops on Android development, data structures, and problem-solving.
-    \item Collaborated with institutions to align content with industry needs.
+\role{IT Teacher}{Albert Camus Middle School, Tunisia}{Jan 2025 -- Jul 2025}
+\begin{itemize}
+  \item Developed and delivered training modules on IT fundamentals, mobile development, and algorithms.
+  \item Led workshops on Android development, data structures, and problem-solving; mentored students through coding challenges.
+  \item Collaborated with institutions to align content with industry needs.
 \end{itemize}
-\textbf{VR Developer (Intern)} -- Leymax Technologies, Tunisia \hfill Jan 2024 -- Jun 2024
-\begin{itemize}[leftmargin=*]
-    \item Built immersive VR applications in Unreal Engine 5 using Blueprint/C++.
-    \item Modeled and optimized 3D assets in Blender for photorealistic simulation.
-    \item Implemented multiplayer replication infrastructure for real-time multi-user experiences on AWS.
+\role{VR Developer Intern}{Leymax Technologies, Tunisia}{Jan 2024 -- Jun 2024}
+\begin{itemize}
+  \item Built immersive VR applications in Unreal Engine 5 using Blueprint and C++; modeled and optimized 3D assets in Blender.
+  \item Implemented multiplayer replication infrastructure for real-time multi-user experiences on AWS.
+  \item Containerized VR applications with Docker and streamlined testing through CI/CD.
 \end{itemize}
-\textbf{Telecom Networks and Infrastructure Intern} -- Tunisie Telecom, Tunisia \hfill Jan 2022 -- Feb 2022
-\begin{itemize}[leftmargin=*]
-    \item Deployed and configured switches, routers, and fiber-optic links for 200+ endpoints.
-    \item Automated log collection with Bash, reducing manual reporting time by 50\%.
-    \item Authored technical documentation for operations and troubleshooting.
+\role{Telecom Networks and Infrastructure Intern}{Tunisie Telecom, Tunisia}{Jan 2022 -- Feb 2022}
+\begin{itemize}
+  \item Deployed and configured switches, routers, and fiber-optic links for 200+ endpoints.
+  \item Automated log collection with Bash, reducing manual reporting time by 50\%; authored technical documentation.
 \end{itemize}
-\textbf{Junior Entrepreneurship Coach} -- BIAT Foundation, Tunis \hfill Jan 2019 -- Dec 2020
-\begin{itemize}[leftmargin=*]
-    \item Mentored students in business model development and pitch preparation.
-    \item Designed workshops on Lean Startup, design thinking, and public speaking.
-    \item Organized hackathons, pitch nights, and networking events.
+\role{Junior Entrepreneurship Coach}{BIAT Foundation, Tunis}{2019 -- 2021}
+\begin{itemize}
+  \item Mentored 100+ students in business model development, Lean Startup, and pitch preparation.
+  \item Designed workshops on design thinking and public speaking; organized hackathons, pitch nights, and networking events.
 \end{itemize}
-
----
 
 \section*{Projects}
+\project{DevOps and Software Engineering Project}{Secure, fully tested Customer Accounts microservice built with Agile, TDD, and a GitHub Actions CI/CD pipeline; RESTful CRUD in Flask, Flask-Talisman and CORS security, automated linting, unit tests, and coverage enforcement.}
+\project{Red Hat OpenShift Deployment}{Configured and deployed containerized applications, managing routes, services, RBAC, and CI/CD integration.}
+\project{Health App on Kubernetes}{Containerized and deployed a health application with Docker and Kubernetes and CI/CD pipelines.}
+\project{Historical Weather Forecast Comparison}{Automated Shell ETL pipeline comparing daily forecasts with actuals.}
+\project{Automatic Backup Shell Script}{Linux Shell and Cron backup of encrypted password files modified in the last 24 hours.}
+\project{Price Comparison App on IBM Code Engine}{Serverless application with auto-scaling and RESTful APIs.}
+\project{Emotion Detector with IBM Watson}{AI/ML solution classifying emotions in user feedback with IBM Watson.}
+\project{TDD and BDD Practice Code}{Test-Driven and Behavior-Driven Development across sample projects.}
+\project{GDP Data Extraction and Processing}{Python and Jupyter data engineering on GDP data from Wikipedia and APIs.}
+\project{Oracle and Cloud Database Work}{Oracle backup and recovery automation, database monitoring dashboard, and AWS RDS tuning (see Database Administrator resume).}
 
-\textbf{DevOps \& Software Engineering Project}  
-Developed a secure, fully tested Customer Accounts microservice using Agile methodologies, Test‑Driven Development, and a CI/CD pipeline with GitHub Actions. I implemented RESTful CRUD operations in Flask, enforced security best practices with Flask‑Talisman and CORS, and maintained high code quality through automated linting, unit testing, and coverage enforcement.
-
-\textbf{Red Hat OpenShift Deployment Project}  
-Configured and deployed containerized applications on Red Hat OpenShift, managing routes, services, and CI/CD integration.  
-
-\textbf{Deployment of Health App on Kubernetes}  
-Containerized and deployed a health application using Docker and Kubernetes, integrating CI/CD pipelines for continuous delivery.  
-
-\textbf{Historical Weather Forecast Comparison}  
-Automated an ETL pipeline in Shell to scrape, parse, and compare daily weather forecasts with actuals, improving data accuracy and monitoring.  
-
-\textbf{Automatic Backup Shell Script}  
-A robust, automated solution to back up sensitive encrypted password files modified in the last 24 hours using Linux Shell Scripting and Cron.
-
-\textbf{Code Engine Product Price Comparison App}  
-Built and deployed a serverless product price comparison application on IBM Code Engine, leveraging auto-scaling and RESTful APIs.  
-
-\textbf{Emotion Detector with IBM Watson}  
-Developed an AI/ML solution to classify emotions in user feedback using IBM Watson services for natural language analysis.  
-
-\textbf{TDD \& BDD Practice Code}  
-Applied Test-Driven and Behavior-Driven Development methodologies across sample projects to ensure robust, maintainable code.  
-
-\textbf{GDP Data Extraction and Processing}  
-Extracted and processed GDP data from Wikipedia and APIs using Python and Jupyter, applying data engineering and transformation techniques.  
-
----
-
-\section*{Licenses \& Certifications}
-
-\begin{itemize}[leftmargin=*]
-    \item IBM DevOps and Software Engineering – IBM (Feb 2026)
-    \item AWS Academy Cloud Architecting – AWS (Jun 2025)
-    \item AWS Academy Cloud Practitioner (CLF-C02) – AWS (Mar 2025)
-    \item MS PL-300 Power BI Data analyst (Dec 2026)
-    \item AWS Cloud Practitioner – DataCamp (Apr 2025)
-    \item DevOps, Cloud, and Agile Foundations – IBM/edX (Jun 2025)
-    \item Linux Commands \& Shell Scripting – IBM/edX (Jul 2025)
-    \item Agile and Scrum Fundamentals – IBM/edX (Jun 2025)
-    \item DevOps Basics for Everyone – IBM/edX (Jun 2025)
-    \item Introduction to Cloud Computing – IBM/edX (Jun 2025)
-    \item Software Engineering Fundamentals – IBM/edX (Jun 2025)
-    \item Containerization with Docker and Kubernetes – DataCamp (Apr 2025)
-    \item Introduction to Snowflake – DataCamp (Jun 2025)
-    \item Data Manipulation with pandas – DataCamp (May 2025)
-    \item Joining Data with pandas – DataCamp (Jun 2025)
-    \item Introduction to Statistics in Python – DataCamp (Jul 2025)
-    \item Intermediate Python – DataCamp (Mar 2025)
+\section*{Licenses and Certifications}
+\begin{itemize}
+  \item IBM DevOps and Software Engineering, IBM (Feb 2026)
+  \item AWS Academy Cloud Architecting, AWS (Jun 2025)
+  \item AWS Academy Cloud Practitioner (CLF-C02), AWS (Mar 2025)
+  \item Microsoft Power BI Data Analyst Professional Certificate, Microsoft/Coursera
+  % CONFIRM: "MS PL-300 Power BI Data Analyst (Dec 2026)" was listed as earned but the date is in the future. Add back only once passed.
+  \item AWS Cloud Practitioner, DataCamp (Apr 2025)
+  \item DevOps, Cloud, and Agile Foundations, IBM/edX (Jun 2025)
+  \item Linux Commands and Shell Scripting, IBM/edX (Jul 2025)
+  \item Agile and Scrum Fundamentals, IBM/edX (Jun 2025)
+  \item DevOps Basics for Everyone, IBM/edX (Jun 2025)
+  \item Introduction to Cloud Computing, IBM/edX (Jun 2025)
+  \item Software Engineering Fundamentals, IBM/edX (Jun 2025)
+  \item Containerization with Docker and Kubernetes, DataCamp (Apr 2025)
+  \item Introduction to Snowflake, DataCamp (Jun 2025)
+  \item Data Manipulation with pandas, DataCamp (May 2025)
+  \item Joining Data with pandas, DataCamp (Jun 2025)
+  \item Introduction to Statistics in Python, DataCamp (Jul 2025)
+  \item Intermediate Python, DataCamp (Mar 2025)
 \end{itemize}
 
----
-
 \section*{Skills}
-\textbf{Cloud:} AWS (EC2, S3, RDS, IAM, Lambda, CloudFormation), IBM Cloud \\
-\textbf{DevOps:} Docker, Kubernetes, OpenShift, Terraform, Git, CI/CD, Jenkins, DevOps, DevSecOps, Continuous Integration, Continuous Development, Podman \\
-\textbf{Programming:} Python, Bash, PowerShell, Java, PHP, SQL, RESTful Services, GraphQL, Postman \\
-\textbf{Security:} Vulnerability Assessment, Web App Security, Risk Prevention, Static Testing, Software Testing, Snyk, Security Best Practices \\
-\textbf{Monitoring \& Observability:} OpenTelemetry, Prometheus, Grafana, IBM Instana, Mezmo, LogDNA, Kibana, System Monitoring, Observability, Data Logging, Code Coverage \\
-\textbf{SysAdmin:} Windows Server (AD, DNS, DHCP, WSUS), Linux (RHEL, Ubuntu) \\
-\textbf{Methodologies:} Agile, Test-Driven Development (TDD) \\
+\textbf{Cloud:} AWS (EC2, S3, RDS, IAM, Lambda, CloudFormation), IBM Cloud\\
+\textbf{DevOps:} Docker, Kubernetes, OpenShift, Podman, Terraform, Jenkins, GitHub Actions, Git, CI/CD, DevSecOps\\
+\textbf{Programming:} Python, Bash, PowerShell, Java, PHP, SQL, REST APIs, GraphQL, Postman\\
+\textbf{Security:} Vulnerability assessment, web application security, Snyk\\
+\textbf{Monitoring and Observability:} OpenTelemetry, Prometheus, Grafana, IBM Instana, Mezmo (LogDNA), Kibana\\
+\textbf{Systems:} Windows Server (Active Directory, DNS, DHCP, WSUS), Linux (RHEL, Ubuntu)\\
+\textbf{Methodologies:} Agile, Test-Driven Development (TDD)\\
 \textbf{Languages:} English (Fluent), French (Professional), Arabic (Native)
 
-
-
-
 \end{document}
-
-

@@ -1,10 +1,20 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}[Ligatures=NoCommon, Mapping=tex-text, RawFeature={-liga;-clig;-dlig}]
 \usepackage[hidelinks]{hyperref}
+\usepackage{xspace}
 \setlength{\parskip}{0.8em}
 \setlength{\parindent}{0pt}
 \input{personal.tex}
-\input{custom_fields.tex} % <-- This pulls in your job-specific values
+
+% ---- Fill these in per application (the PDF is skipped by CI while FILL IN remains) ----
+\newcommand{\CompanyName}{FILL IN\xspace}
+\newcommand{\HiringManager}{Hiring Manager\xspace}
+\newcommand{\YourMotivation}{FILL IN\xspace}
+\newcommand{\JobTitle}{System Administrator\xspace}
+\newcommand{\JobKeywords}{Windows and Linux administration, Active Directory, DNS/DHCP, Group Policy, and patch automation with PowerShell and Bash\xspace}
+% ---------------------------------------------------------------------------------------
 
 \begin{document}
 

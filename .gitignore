@@ -1,0 +1,8 @@
+build/
+dist/
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+*.xdv
