@@ -16,7 +16,7 @@ cd "$(dirname "$0")/.."
 BUILD=build; DIST=dist
 BUILD_FILES="${BUILD_FILES:-all}"
 rm -rf "$BUILD" "$DIST"; mkdir -p "$BUILD" "$DIST"
-fail=0; built=0
+fail=0; built=0; matched=0
 
 # Turn plain text into LaTeX-safe text (handles & % $ # _ { } ~ ^ \)
 tex_escape() {
@@ -26,13 +26,22 @@ m={"\\":r"\textbackslash{}","&":r"\&","%":r"\%","$":r"\$","#":r"\#","_":r"\_","{
 print("".join(m.get(c,c) for c in sys.argv[1]),end="")' "$1"
 }
 
-matches() {  # does file name $1 match the BUILD_FILES selection?
+# Lowercase and split on anything that is not a letter or digit
+norm() { echo "$1" | tr 'A-Z' 'a-z' | tr -cs 'a-z0-9' ' '; }
+
+# A selection matches when EVERY word of it starts a word in the file name (any order, any - _ or space).
+# Example: "devops-sre-master", "Master DevOps SRE" and "Master_DevOps_SRE" all match the same file.
+matches() {
   [[ "$BUILD_FILES" == "all" ]] && return 0
-  local frag f="${1,,}"
+  local words frag tok ok
+  words=" $(norm "$1")"
   IFS=',' read -ra frags <<<"$BUILD_FILES"
   for frag in "${frags[@]}"; do
-    frag="$(echo "$frag" | sed 's/^ *//; s/ *$//')"; frag="${frag,,}"
-    [[ -n "$frag" && "$f" == *"$frag"* ]] && return 0
+    ok=1; [[ -z "$(norm "$frag" | tr -d ' ')" ]] && ok=0
+    for tok in $(norm "$frag"); do
+      [[ "$words" == *" $tok"* ]] || { ok=0; break; }
+    done
+    ((ok)) && return 0
   done
   return 1
 }
@@ -41,6 +50,7 @@ for path in src/*.tex; do
   f=$(basename "$path"); name="${f%.tex}"
   case "$f" in preamble.tex|personal.tex) continue;; esac
   matches "$f" || continue
+  matched=$((matched+1))
 
   pretex=""; outname="$name"
   if [[ "$f" == *"Cover Letter"* ]]; then
@@ -78,6 +88,11 @@ for path in src/*.tex; do
   cp "$pdf" "$DIST/${outname// /_}.pdf"
 done
 
-if ((built==0 && fail==0)); then echo "Nothing was built. Check BUILD_FILES (\"$BUILD_FILES\") matches a file name."; exit 1; fi
+if ((matched==0)); then
+  echo "Nothing was built: \"$BUILD_FILES\" does not match any file. Type part of a file name from this list (or all):"
+  for x in src/*.tex; do y=$(basename "$x" .tex); case "$y" in preamble|personal) ;; *) echo "  - $y";; esac; done
+  exit 1
+fi
+((built==0 && fail==0)) && { echo "Nothing was built (everything selected was skipped, see SKIP lines above)."; exit 1; }
 echo; echo "PDFs in $DIST/:"; ls -1 "$DIST"
 exit $fail

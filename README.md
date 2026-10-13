@@ -1,5 +1,13 @@
 # Ayoub-Chaieb-Resume
 
+[![Build resume PDFs](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml/badge.svg)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml)
+[![main branch](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml/badge.svg?branch=main)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml?query=branch%3Amain)
+[![devops-sre-master branch](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml/badge.svg?branch=devops-sre-master)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml?query=branch%3Adevops-sre-master)
+[![Push builds](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml/badge.svg?event=push)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml?query=event%3Apush)
+[![Manual builds](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml/badge.svg?event=workflow_dispatch)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml?query=event%3Aworkflow_dispatch)
+[![Pull request builds](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml/badge.svg?event=pull_request)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml?query=event%3Apull_request)
+[![Latest PDFs](https://img.shields.io/github/v/release/ayoub-chaieb/Ayoub-Chaieb-Resume?label=latest%20PDFs&display_name=tag)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/releases/latest)
+
 LaTeX resumes tailored per job title, built to be ATS-friendly and one page.
 
 ## Files
@@ -14,7 +22,7 @@ Every push to `main` builds all resumes. Download them from the **latest** relea
 ## Get PDFs for the files you choose
 1. Open the repo on GitHub, click **Actions**.
 2. Click **Build resume PDFs** (left list), then **Run workflow** (right side).
-3. In **Which files?** type `all`, or name parts separated by commas, for example `Cloud, IT Support`.
+3. In **Which files?** type `all`, or name parts separated by commas, for example `Cloud, IT Support` or `Master DevOps SRE`. The wording is flexible: `devops-sre-master` finds the same file.
 4. For a cover letter also fill **company** and **motivation** (and optionally hiring manager).
    Example: files `Cover Letter_DevOps`, company `Acme`, motivation `your focus on reliability`.
 5. Click the green **Run workflow** button, wait about 1 minute, open the finished run, download from **Artifacts**.
