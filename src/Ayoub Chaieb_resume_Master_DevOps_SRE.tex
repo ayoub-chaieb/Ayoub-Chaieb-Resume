@@ -1,0 +1,94 @@
+% DevOps / Cloud / SRE-focused long-form Master. Same facts as the main Master, re-ordered
+% and worded around cloud, DevOps and reliability work. Long-form (2 pages) on purpose.
+\documentclass[a4paper,10pt]{article}
+\input{preamble.tex}
+
+\begin{document}
+\resumeheader{Cloud, DevOps and Site Reliability Engineer}
+
+\section*{Summary}
+AWS Certified Solutions Architect (Associate), AWS Cloud Practitioner, and IBM DevOps and Software Engineering certified engineer with hands-on Site Reliability Engineering, cloud, and DevOps experience. Eliminates operational toil through automation (PowerShell, Bash, Python), reduces incidents with patch management and monitoring, and ships containerized workloads with Docker, Kubernetes, and OpenShift through CI/CD pipelines on AWS and IBM Cloud. Applies IAM best practices and cost-aware cloud design. Master's in Software Engineering; clear communicator who documents processes and trains teams.
+
+\section*{Technical Skills}
+\textbf{Cloud Platforms:} AWS (EC2, S3, VPC, IAM, RDS, Aurora, EFS, ElastiCache, Lambda, CloudFormation, Elastic Load Balancing, Auto Scaling), IBM Cloud (Code Engine, Container Registry)\\
+\textbf{Containers and Orchestration:} Docker, Docker Compose, Kubernetes (Deployments, Horizontal Pod Autoscaler, rolling updates and rollbacks), Red Hat OpenShift, Podman, Istio\\
+\textbf{CI/CD and Automation:} GitHub Actions, Jenkins, Git, GitHub, Terraform, Infrastructure as Code, Apache Airflow, Cron, Test-Driven Development (TDD), Behavior-Driven Development (BDD), DevSecOps\\
+\textbf{Site Reliability and Observability:} Incident response, patch management, high availability, fault tolerance, backup and recovery, Prometheus, Grafana, OpenTelemetry, IBM Instana, Kibana, Mezmo (LogDNA)\\
+\textbf{Programming and Scripting:} Python, Bash, PowerShell, Java, SQL, Flask, REST APIs, Postman\\
+\textbf{Security:} AWS IAM, vulnerability assessment with Snyk, web application security, endpoint protection\\
+\textbf{Systems and Networking:} Linux (RHEL, Ubuntu), Windows Server (Active Directory, Group Policy, DNS, DHCP, WSUS), switches, routers, fiber links\\
+\textbf{Methodologies:} Agile, Scrum, Kanban, DevOps culture, technical documentation
+
+\section*{Professional Experience}
+\role{ICT Teacher}{Andalus International Schools, Riyadh, Saudi Arabia}{Aug 2026 -- Present}
+\begin{itemize}
+  \item Built a native Android bell system running on every smartboard: spoken period announcements, a live schedule, and a timetable synced from a shared spreadsheet (CSV) with offline caching; APK built and shipped through GitHub Actions.
+  \item Created data-driven KPI and inventory reports with Excel and Power BI; proctor and coordinator for MAP exams; use Edupage for school management.
+  \item Teach ICT and introductory AI, programming, and automation through hands-on projects.
+\end{itemize}
+\role{ICT and AI Teacher}{Almanhal Schools, Riyadh, Saudi Arabia}{Aug 2025 -- Aug 2026}
+\begin{itemize}
+  \item Integrated cloud-based tools and the DataCamp learning platform into data-driven, hands-on projects.
+  \item Delivered ICT and AI curricula and provided technical support to staff and students.
+\end{itemize}
+\role{Site Reliability Engineer}{BOUGABRINE Enterprise, Tunisia}{Jun 2024 -- Jun 2025}
+\begin{itemize}
+  \item Eliminated operational toil by automating user provisioning and patching with PowerShell, Bash, and Python, cutting manual work by 60\%.
+  \item Reduced incidents by 30\% by rolling out WSUS patch management and endpoint protection.
+  \item Operated Windows Server infrastructure (Active Directory, Group Policy, DNS, DHCP) for a 50-user network and handled Tier 1/2 incident response.
+  \item Documented procedures and processes for smoother team collaboration and faster troubleshooting.
+\end{itemize}
+\role{IT Teacher}{Albert Camus Middle School, Tunisia}{Jan 2025 -- Jul 2025}
+\begin{itemize}
+  \item Delivered training on IT fundamentals, algorithms, and mobile development; led coding workshops and mentored students.
+\end{itemize}
+\role{VR Developer Intern}{Leymax Technologies, Tunisia}{Jan 2024 -- Jun 2024}
+\begin{itemize}
+  \item Containerized VR applications with Docker and streamlined testing through CI/CD pipelines.
+  \item Implemented multiplayer replication infrastructure for real-time multi-user experiences on AWS, optimizing synchronization and latency.
+  \item Built immersive Unreal Engine 5 applications (Blueprint, C++, Nanite, Lumen) and optimized Blender 3D assets for smooth performance.
+\end{itemize}
+\role{Telecom Networks and Infrastructure Intern}{Tunisie Telecom, Tunisia}{Jan 2022 -- Feb 2022}
+\begin{itemize}
+  \item Configured switches, routers, and fiber-optic links for 200+ endpoints.
+  \item Automated log collection with Bash, cutting manual reporting time by 50\%, and authored technical documentation.
+\end{itemize}
+\role{Junior Entrepreneurship Coach}{BIAT Foundation, Tunis}{Jan 2019 -- Dec 2020}
+\begin{itemize}
+  \item Coached 600+ aspiring entrepreneurs and 30+ startup teams; chaired a university coaching branch and led 50+ workshops.
+\end{itemize}
+
+\section*{Cloud and DevOps Projects}
+\project{Highly Available WordPress on AWS}{Multi-AZ deployment with a custom VPC built through CloudFormation, Application Load Balancer, Auto Scaling EC2, Aurora Multi-AZ, EFS, and ElastiCache; completed an AWS Well-Architected review and fault-injection testing.}
+\project{Health App on Kubernetes (IBM Cloud)}{Built a multi-stage Docker image, pushed it to IBM Cloud Container Registry, and deployed it on Kubernetes with Horizontal Pod Autoscaler scaling and zero-downtime rolling updates and rollbacks.}
+\project{DevOps Capstone: Customer Accounts Microservice}{Secure Flask REST service built with TDD, Flask-Talisman and CORS, and a GitHub Actions pipeline enforcing linting, unit tests, and coverage.}
+\project{Red Hat OpenShift Deployment}{Configured and deployed containerized applications, managing routes, services, RBAC, and CI/CD integration.}
+\project{AIS Bell System (CI/CD)}{Native Android background service for smartboards with spoken announcements, live schedule, and offline-safe sync from a published spreadsheet; built and packaged with GitHub Actions.}
+\project{Apache Airflow Deployment}{Docker Compose stack with PostgreSQL, Redis, Celery worker, scheduler, and webserver, running example DAGs.}
+\project{Observability Sandbox with IBM Instana}{Used Stan's Robot Shop, a polyglot microservice application (Node.js, Java, Python, Go, PHP, MongoDB, Redis, MySQL, RabbitMQ), to practice container orchestration and application monitoring.}
+\project{Automatic Backup Script}{Linux Shell and Cron backup of encrypted password files modified in the last 24 hours.}
+\project{Historical Weather Forecast Comparison}{Automated Shell ETL pipeline comparing daily forecasts with actuals, with logging and error handling.}
+\project{Price Comparison App on IBM Code Engine}{Serverless application with auto-scaling and REST APIs.}
+
+\section*{Licenses and Certifications}
+\begin{itemize}
+  \item AWS Certified Solutions Architect -- Associate, AWS
+  \item IBM DevOps and Software Engineering, IBM (Feb 2026)
+  \item AWS Academy Cloud Architecting, AWS (Jun 2025)
+  \item AWS Academy Cloud Practitioner (CLF-C02), AWS (Mar 2025)
+  \item AWS Cloud Practitioner, DataCamp (Apr 2025)
+  \item Containerization with Docker and Kubernetes, DataCamp (Apr 2025)
+  \item DevOps, Cloud, and Agile Foundations, IBM/edX (Jun 2025)
+  \item Linux Commands and Shell Scripting, IBM/edX (Jul 2025)
+  \item DevOps Basics for Everyone, IBM/edX (Jun 2025)
+  \item Introduction to Cloud Computing, IBM/edX (Jun 2025)
+  \item Software Engineering Fundamentals, IBM/edX (Jun 2025)
+  \item Agile and Scrum Fundamentals, IBM/edX (Jun 2025)
+  \item Microsoft PL-300 Power BI Data Analyst, Microsoft (expected Dec 2026)
+\end{itemize}
+
+\section*{Education}
+\textbf{Master's in Software Engineering}, ISET Sousse \hfill Sep 2024 -- Jul 2026 (GPA 3.36/4)\\
+\textbf{Bachelor's in Information Systems}, ISET Sousse \hfill Sep 2021 -- Jul 2024 (GPA 3.24/4)
+
+\end{document}
