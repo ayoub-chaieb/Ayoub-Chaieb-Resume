@@ -1,12 +1,9 @@
 # Ayoub-Chaieb-Resume
 
-[![Build resume PDFs](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml/badge.svg)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml)
-[![main branch](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml/badge.svg?branch=main)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml?query=branch%3Amain)
-[![devops-sre-master branch](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml/badge.svg?branch=devops-sre-master)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml?query=branch%3Adevops-sre-master)
-[![Push builds](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml/badge.svg?event=push)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml?query=event%3Apush)
-[![Manual builds](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml/badge.svg?event=workflow_dispatch)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml?query=event%3Aworkflow_dispatch)
-[![Pull request builds](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml/badge.svg?event=pull_request)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml?query=event%3Apull_request)
-[![Latest PDFs](https://img.shields.io/github/v/release/ayoub-chaieb/Ayoub-Chaieb-Resume?label=latest%20PDFs&display_name=tag)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/releases/latest)
+[![main build](https://img.shields.io/github/actions/workflow/status/ayoub-chaieb/Ayoub-Chaieb-Resume/build-pdfs.yml?branch=main&label=main%20build)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml?query=branch%3Amain)
+[![master-ats-test build](https://img.shields.io/github/actions/workflow/status/ayoub-chaieb/Ayoub-Chaieb-Resume/build-pdfs.yml?branch=master-ats-test&label=master-ats-test%20build)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml?query=branch%3Amaster-ats-test)
+[![manual build](https://img.shields.io/github/actions/workflow/status/ayoub-chaieb/Ayoub-Chaieb-Resume/build-pdfs.yml?event=workflow_dispatch&label=manual%20build)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/actions/workflows/build-pdfs.yml?query=event%3Aworkflow_dispatch)
+[![latest PDFs](https://img.shields.io/github/v/release/ayoub-chaieb/Ayoub-Chaieb-Resume?label=latest%20PDFs&display_name=tag)](https://github.com/ayoub-chaieb/Ayoub-Chaieb-Resume/releases/latest)
 
 LaTeX resumes tailored per job title, built to be ATS-friendly and one page.
 
