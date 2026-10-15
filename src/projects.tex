@@ -1,0 +1,44 @@
+% projects.tex -- every project is defined ONCE here. Resumes pick the ones they need,
+% e.g. \pKube \pAWSHA. Edit a description here and all resumes update.
+% Needs \project{Name}{description} from preamble.tex.
+
+% ---- Own builds ----
+\newcommand{\pAIS}{\project{AIS Bell System}{Native Android (Kotlin) background service for smartboards: spoken period announcements, live on-screen schedule, and offline-safe timetable sync from a published CSV; APK built and packaged with GitHub Actions.}}
+\newcommand{\pResumePipe}{\project{Automated Resume Pipeline}{LaTeX resumes compiled by GitHub Actions with ATS checks (page count, text layer), on-demand builds, and release publishing.}}
+\newcommand{\pFlaskAPI}{\project{Flask REST API}{CRUD endpoints with validation, error handling, search, and template rendering, tested with Postman and cURL.}}
+\newcommand{\pBackup}{\project{Encrypted Password Backup Script}{Bash and Cron automation that archives password files changed in the last 24 hours into timestamped backups.}}
+\newcommand{\pWeatherETL}{\project{Weather ETL Pipeline}{Bash and Cron job that scrapes, parses, and logs daily Casablanca forecasts and observations to measure forecast accuracy.}}
+\newcommand{\pGDP}{\project{GDP Data Pipeline}{Python, pandas, and NumPy pipeline that scrapes, cleans, and stores the top 10 economies by nominal GDP.}}
+\newcommand{\pXpose}{\project{Xpose Tech Website}{Static business website deployed with a GitHub Pages workflow and a custom domain.}}
+\newcommand{\pDocker}{\project{Docker Image Hardening}{Refactored Dockerfiles for Node.js applications with best practices (minimal packages, non-root user) and upgraded Node.js base images.}}
+\newcommand{\pDevContainer}{\project{Python Dev Container}{Configured a dev container with extensions, Dockerfile, and Makefile plus a Docker image build workflow for a Python data project.}}
+
+% ---- AWS ----
+\newcommand{\pAWSHA}{\project{Highly Available WordPress on AWS}{Two-AZ VPC built with CloudFormation, Application Load Balancer, Auto Scaling, Aurora Multi-AZ, EFS, and ElastiCache; resilience validated with AWS Fault Injection Service.}}
+\newcommand{\pWAF}{\project{AWS Well-Architected Review}{Reviewed a pre-production workload across the six pillars in the AWS Well-Architected Tool and documented improvements.}}
+\newcommand{\pAWSWeb}{\project{Static and Dynamic Websites on AWS}{Hosted a static website on Amazon S3 and built a dynamic website with shared storage on Amazon EFS.}}
+\newcommand{\pAWSNet}{\project{VPC Networking on AWS}{Built a custom VPC with public and private subnets and connected networks with VPC peering.}}
+\newcommand{\pAWSRDS}{\project{Database Migration to Amazon RDS}{Created an Amazon RDS database and migrated an application database to it.}}
+\newcommand{\pAWSSec}{\project{AWS Security Controls}{Applied IAM users, groups, and policies, Amazon Cognito application authentication, and encryption at rest.}}
+\newcommand{\pAWSIaC}{\project{Infrastructure Automation with CloudFormation}{Automated repeatable AWS infrastructure deployment with CloudFormation templates.}}
+\newcommand{\pAWSServerless}{\project{Serverless Architecture on AWS}{Implemented a serverless application architecture with AWS Lambda.}}
+\newcommand{\pAWSHybrid}{\project{Hybrid Storage with AWS Storage Gateway}{Configured an S3 File Gateway and migrated data to the cloud.}}
+\newcommand{\pAWSFound}{\project{AWS Foundations Builds}{Configured IAM, built a VPC with a web server, launched EC2 instances, built a database server, and deployed a load-balanced auto-scaling architecture.}}
+
+% ---- DevOps, CI/CD and containers ----
+\newcommand{\pCapstone}{\project{DevOps Capstone: Customer Accounts Microservice}{Flask REST service with Docker, GitHub Actions CI (lint, tests, coverage), Kubernetes and OpenShift manifests, and a Tekton CD pipeline with build, test, and deploy tasks.}}
+\newcommand{\pCICD}{\project{CI/CD Pipeline with Tekton, OpenShift, and OpenTelemetry}{GitHub Actions and Tekton pipelines (event listener, triggers, PVC), OpenShift deployment with HPA and VPA, and OpenTelemetry tracing with Jaeger on a Flask service.}}
+\newcommand{\pTDDBDD}{\project{Product Service with TDD and BDD}{Flask REST service with unit and route tests, Behave feature files with Selenium UI steps, pylint 10/10, and a pull-request workflow.}}
+\newcommand{\pTekton}{\project{Tekton CI/CD Pipelines}{Built a pipeline in stages: GitHub triggers, Tekton catalog tasks, unit test automation, image build, and deployment to Kubernetes.}}
+\newcommand{\pTDDSuites}{\project{TDD and BDD Test Suites}{Nose tests, assertions, fixtures, coverage, factories and fakes, and mocking; Behave feature files, test-data loading, and step implementations.}}
+\newcommand{\pKube}{\project{Health App on Kubernetes (IBM Cloud)}{Multi-stage Docker image in IBM Cloud Container Registry, deployed on Kubernetes with Horizontal Pod Autoscaler and zero-downtime rolling updates and rollbacks.}}
+\newcommand{\pOpenShift}{\project{Red Hat OpenShift Deployment}{Deployed an application from Git with the oc CLI and web console, inspected builds and image streams, exposed a route, and verified Horizontal Pod Autoscaling.}}
+\newcommand{\pCodeEngine}{\project{Price Comparison on IBM Cloud Code Engine}{Deployed three microservices (two backends and a frontend) serverlessly with auto-scaling and REST APIs.}}
+\newcommand{\pRobotShop}{\project{Instana Monitoring for Robot Shop}{Configured an IBM Instana installation for a polyglot microservice application, built dashboard widgets and alerts, and simulated load.}}
+\newcommand{\pEmotion}{\project{Emotion Detector with IBM Watson NLP}{Flask web app that classifies emotions in feedback, with a packaged module, unit tests, error handling, and static analysis.}}
+\newcommand{\pGitFlow}{\project{Git and GitHub Collaboration Workflows}{Repositories with README, license, code of conduct, and contribution guidelines; feature branches and pull requests.}}
+\newcommand{\pAgile}{\project{Agile Sprint Planning}{User stories, story points, product backlog, sprint plan, daily stand-up workflow, and burndown forecasting.}}
+
+% ---- Data and platforms ----
+\newcommand{\pAirflow}{\project{Apache Airflow Deployment}{Docker Compose stack with PostgreSQL, Redis, Celery worker, scheduler, and webserver, validated with example DAGs.}}
+\newcommand{\pHive}{\project{Hadoop and Hive Data Warehousing}{Created Hive tables, loaded and queried data with SQL-style commands, and ran MapReduce jobs.}}

@@ -48,7 +48,7 @@ matches() {
 
 for path in src/*.tex; do
   f=$(basename "$path"); name="${f%.tex}"
-  case "$f" in preamble.tex|personal.tex) continue;; esac
+  case "$f" in preamble.tex|personal.tex|projects.tex) continue;; esac
   matches "$f" || continue
   matched=$((matched+1))
 
@@ -90,7 +90,7 @@ done
 
 if ((matched==0)); then
   echo "Nothing was built: \"$BUILD_FILES\" does not match any file. Type part of a file name from this list (or all):"
-  for x in src/*.tex; do y=$(basename "$x" .tex); case "$y" in preamble|personal) ;; *) echo "  - $y";; esac; done
+  for x in src/*.tex; do y=$(basename "$x" .tex); case "$y" in preamble|personal|projects) ;; *) echo "  - $y";; esac; done
   exit 1
 fi
 ((built==0 && fail==0)) && { echo "Nothing was built (everything selected was skipped, see SKIP lines above)."; exit 1; }
