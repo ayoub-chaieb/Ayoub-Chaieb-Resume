@@ -1,5 +1,6 @@
 \documentclass[a4paper,10pt]{article}
 \input{preamble.tex}
+\input{projects.tex}
 
 \begin{document}
 \resumeheader{System Administrator}
@@ -42,10 +43,11 @@ System Administrator with hands-on experience running Windows and Linux environm
 \end{itemize}
 
 \section*{Projects}
-\project{Automatic Backup Script}{Linux Shell and Cron solution that backs up encrypted password files modified in the last 24 hours.}
-\project{Historical Weather Forecast Comparison}{Shell ETL pipeline that scrapes, parses, and compares daily forecasts with actuals, with logging and error handling.}
-\project{Health App on Kubernetes}{Containerized a health application with Docker and deployed it on Kubernetes with CI/CD.}
-\project{Red Hat OpenShift Deployment}{Deployed containerized applications, managing routes, services, and RBAC.}
+\pBackup
+\pWeatherETL
+\pKube
+\pOpenShift
+\pAWSNet
 
 \section*{Education}
 \textbf{Master's in Software Engineering}, ISET Sousse \hfill 2024 -- 2026 (GPA 3.36/4)\\
