@@ -1,0 +1,21 @@
+To: omniaelshamy@sis.net.sa
+Subject: Application: Field O&M Engineer (Cloud Data Center Infrastructure) - Ayoub Chaieb
+Attachment: Ayoub_Chaieb_resume_Field_OM_Engineer.pdf
+
+Dear Hiring Team,
+
+I am applying for the Field O&M Engineer role in Riyadh. I am based in Riyadh and my CV is attached.
+
+What I bring to this role:
+- Telecom and network hands-on work: configured switches, routers, and fiber-optic links for 200+ endpoints at Tunisie Telecom.
+- Infrastructure operations: as a Site Reliability Engineer I ran Windows Server infrastructure, handled Tier 1/2 incidents, and reduced incidents by 30% through patch management and endpoint protection.
+- Troubleshooting and documentation: I diagnose hardware and software faults, document the fix, and automate repeat work (60% less manual effort through scripting).
+- Platform knowledge: Red Hat OpenShift, Kubernetes, and Linux (RHEL), plus AWS Solutions Architect Associate and IBM DevOps certifications.
+
+I would welcome the chance to discuss how I can support your on-site operations and SLA targets. Thank you for your time.
+
+Best regards,
+Ayoub Chaieb
++966 57 036 3387
+ayoubchaieb75@gmail.com
+linkedin.com/in/ayoub-chaieb-40485622a

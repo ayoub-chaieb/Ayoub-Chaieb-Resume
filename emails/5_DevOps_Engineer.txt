@@ -1,0 +1,22 @@
+To: jobs5@addar-bs.com
+Subject: Application: DevOps Engineer (Riyadh) - Ayoub Chaieb
+Attachment: Ayoub_Chaieb_resume_DevOps_Engineer_Riyadh.pdf
+
+Dear Hiring Team at Dar AlBalad,
+
+I am applying for the DevOps Engineer position in Riyadh. My resume is attached.
+
+Relevant to your requirements:
+- Kubernetes, Docker, and OpenShift: I deployed a health application on Kubernetes with autoscaling and zero-downtime rolling updates and rollbacks, and deployed containerized applications on Red Hat OpenShift with routes, services, and RBAC.
+- CI/CD: I built GitHub Actions pipelines that enforce linting, tests, and coverage, and a pipeline that packages and ships an Android app used on every smartboard at my current school.
+- Infrastructure as Code and resilience: Terraform and CloudFormation, including a multi-AZ highly available AWS deployment tested with fault injection.
+- Observability and operations: Prometheus, Grafana, and OpenTelemetry, plus a year as a Site Reliability Engineer on Linux and Windows infrastructure, where I cut incidents by 30% and manual work by 60%.
+- Certifications: AWS Certified Solutions Architect (Associate) and IBM DevOps and Software Engineering.
+
+I would be glad to discuss how I can contribute to your DEV, UAT, and PROD platforms.
+
+Best regards,
+Ayoub Chaieb
++966 57 036 3387
+ayoubchaieb75@gmail.com
+linkedin.com/in/ayoub-chaieb-40485622a
